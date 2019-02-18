@@ -1,8 +1,8 @@
-console.log('home');
+console.log('home page123475959');
 
 class Log {
     constructor () {
-        console.lo('error');
+        console.log('error');
     }
 }
 let log = new Log();

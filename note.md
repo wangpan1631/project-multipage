@@ -30,4 +30,11 @@ module.exports = {
 ```
 
 ####watch的用法
-监听文件的变化
+监听文件的变化, 监听到文件变化，就自动编译打包
+
+####webpack的小插件
+1. cleanWebpackPlugin -> 清除上一次打包的文件
+2. copyWebpackPlugin -> 拷贝插件
+3. bannerPlugin -> webpack 内置的插件（打包后的文件的版权声明文字）
+
+####webpack.DefinePlugin插件的使用：用来定义全局变量，在webpack打包的时候对这些变量做替换
