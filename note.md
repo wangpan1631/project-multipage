@@ -38,3 +38,8 @@ module.exports = {
 3. bannerPlugin -> webpack 内置的插件（打包后的文件的版权声明文字）
 
 ####webpack.DefinePlugin插件的使用：用来定义全局变量，在webpack打包的时候对这些变量做替换
+
+####webpack跨域问题
+
+**webpack-dev-middleware** webpack开发服务的中间件(可以在服务端启动webpack)
+npm i webpack-dev-middleware -D
