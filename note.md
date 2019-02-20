@@ -58,3 +58,20 @@ module.exports = {
     }
 }
 ```
+
+#### 定义环境变量
+webpack内置的插件,webpack.DefinePlugin()
+```
+plugins: [
+    new webpack.DefinePlugin({
+        DEV: JSON.stringify('dev'), // String 'dev'
+        FLAG: 'true', // Boolean true
+        EXPRESSION: '1+1' // Number 2
+    })
+]
+```
+
+#### webpack-merge
+有一个基础配置文件：webpack.base.js
+开发配置文件：webpack.dev.js
+生产配置文件：webpack.prod.js
