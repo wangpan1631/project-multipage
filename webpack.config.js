@@ -28,8 +28,21 @@ module.exports = {
         // }
         // 3) 有服务端，不用用代理来处理，能不能在服务端中启动webpack，端口用服务端端口
     },
+    resolve: { //解析第三方包
+        extensions: ['.js', '.css', '.json', '.vue'], //自动添加引入文件的后缀
+        modules: [path.resolve('node_modules')],
+        mainFields: ['style', 'main'] //指定查找区域的顺序
+        //mainFiles: [] 入口文件的名字
+        // alias: {
+        //     bootstrap: 'bootstrap/dist/css/bootstrap.css'
+        // }
+    },
     module: {
         rules:[
+            {
+                test: /\.css$/,
+                use: ['style-loader', 'css-loader']
+            },
             {
                 test: /\.js$/,
                 use: {

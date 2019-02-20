@@ -43,3 +43,18 @@ module.exports = {
 
 **webpack-dev-middleware** webpack开发服务的中间件(可以在服务端启动webpack)
 npm i webpack-dev-middleware -D
+
+#### resolve
+commonjs模块查找，先找node_modules目录下的文件，找不到的话再向上查找
+```
+module.exports = {
+    resolve: {
+        extensions: ['.js', '.css', '.json', '.vue'], //自动添加引入文件的后缀
+        modules: [path.resolve('node_modules')],
+        mainFields: ['style', 'main'], //查找模块顺序
+        alias: {
+            bootstrap: 'bootstrap/dist/css/bootstrap.css'
+        }
+    }
+}
+```

@@ -1,3 +1,7 @@
+import 'bootstrap';
+import './style';
+
+
 // console.log('home page123475959');
 
 // class Log {
