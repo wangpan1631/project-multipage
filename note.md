@@ -1,7 +1,7 @@
-####多页应用
+#### 多页应用
 
 2.18
-####source-map
+#### source-map
 调试打包后的代码，生成源码映射
 webpack.config.js文件中配置：
 1. source-map -> 源码映射，会单独生成一个source-map文件，出错了，会标识报错的行和列
@@ -29,17 +29,17 @@ module.exports = {
 }
 ```
 
-####watch的用法
+#### watch的用法
 监听文件的变化, 监听到文件变化，就自动编译打包
 
-####webpack的小插件
+#### webpack的小插件
 1. cleanWebpackPlugin -> 清除上一次打包的文件
 2. copyWebpackPlugin -> 拷贝插件
 3. bannerPlugin -> webpack 内置的插件（打包后的文件的版权声明文字）
 
-####webpack.DefinePlugin插件的使用：用来定义全局变量，在webpack打包的时候对这些变量做替换
+#### webpack.DefinePlugin插件的使用：用来定义全局变量，在webpack打包的时候对这些变量做替换
 
-####webpack跨域问题
+#### webpack跨域问题
 
 **webpack-dev-middleware** webpack开发服务的中间件(可以在服务端启动webpack)
 npm i webpack-dev-middleware -D
